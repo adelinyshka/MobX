@@ -1,0 +1,171 @@
+.App {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/ocean.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: black;
+}
+
+.Todo__Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Todo__Wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #006dcc;
+  padding: 10px;
+  border: 5px solid transparent;
+  border-radius: 10px
+}
+
+@media (max-width: 500px) {
+  .Todo__Wrapper {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 412px) {
+  .Todo__Wrapper {
+    font-size: 20px;
+  }
+}
+
+.Todo__Item {
+  margin: 10px;
+  padding: 10px;
+  justify-content: space-between;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+.Todo__Item button {
+  border-style: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 25px;
+  background-color: white;
+  margin-left: 10px;
+}
+
+@media (max-width: 500px) {
+  .Todo__Item button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 412px) {
+  .Todo__Item button {
+    font-size: 15px;
+  }
+}
+
+.Todo__Item input {
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 412x) {
+  .Todo__Item input {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.selectContainer {
+  text-align: center;
+  width: 400px;
+}
+
+@media (max-width: 448px) {
+  .selectContainer {
+    width: 250px;
+  }
+}
+
+.select {
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+@media (max-width: 412px) {
+  .select {
+    font-size: 15px;
+  }
+}
+
+span {
+  opacity: 0;
+  color: red;
+  font-size: 20px;
+  animation-name: visibleAlert;
+  animation-duration: 4s;
+}
+
+@keyframes visibleAlert {
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+h2 {
+  font-weight: normal;
+  margin: 10px;
+}
+
+.form {
+  text-align: center;
+  width: 100%;
+}
+
+input {
+  font-size: 25px;
+}
+
+@media (max-width: 500px) {
+  input {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 412px) {
+  input {
+    font-size: 10px;
+  }
+}
+
+.form button {
+  border-style: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 25px;
+  background-color: white;
+  margin-left: 20px;
+}
+
+@media (max-width: 500px) {
+  .form button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 412px) {
+  .form button {
+    font-size: 15px;
+  }
+}
